@@ -1,0 +1,105 @@
+//footer
+footer
+    min-height: 120px
+    padding: 2.5em
+    text-align: center
+    background-image: linear-gradient(to top, #153c71, #3795cb)
+    color: #fff
+    font-size: .8em
+footer
+    ul
+        display: inline-block
+        margin: 0 auto 10px
+        display: flex
+        justify-content: center
+.instagram, .facebook, .twitter, .yelp, .googleMaps
+    background: url(../images/Social_Media_Icons_BW.png) no-repeat
+    display: block
+    height: 27px
+    width: 27px
+    padding: 10px
+    margin: 8px
+.instagram
+    background-position: 0 0
+    &:hover
+        background-position: 0 -27px
+.facebook
+    background-position: -31px 0
+    &:hover
+        background-position: -31px -27px
+.twitter
+    background-position: -62px 0
+    &:hover
+        background-position: -62px -27px
+.yelp
+    background-position: -93px 0
+    &:hover
+        background-position: -93px -27px
+.googleMaps
+    background-position: -124px 0
+    &:hover
+        background-position: -124px -27px
+//end footer
+
+//begin nav
+.hamMenu
+    font-size: 35px
+    background-color: #3795cb
+    text-align: right
+    padding: 5px
+    cursor: pointer
+nav
+    display: none
+    padding: 10px
+    i
+        padding: 2px 5px 0
+    a
+        padding: 5px
+        display: block
+        text-decoration: none
+        font: 1.25em/normal 'Arimo', sans-serif
+        color: #3795cb
+        &:active
+            background-color: #3795cb
+            color: #fff
+#sub1, #sub2
+    padding-left: 20px
+    display: none
+.linkFake
+    padding: 5px
+    display: block
+    text-decoration: none
+    font: 1.25em/normal 'Arimo', sans-serif
+    color: #3795cb
+    a
+        font-size: 20px
+//forms
+form
+    width: 80%
+    margin: .5em auto 1em
+    fieldset
+        margin-bottom: 1em
+        padding-top: 1.5em
+        background-color: #ededed
+@media screen and (min-width: 700px)
+    .fa-chevron-down
+        display: none
+    .hamMenu
+        display: none
+    nav
+        display: block
+    ul
+        display: flex
+        justify-content: space-around
+    #sub1, #sub2
+        position: absolute
+        display: flex
+        flex-direction: column
+        background-color: #153c71
+        padding: 5px
+        margin-top: 5px
+        display: none
+        a
+            color: #fff
+            &:nth-of-type(1)
+                border-bottom: solid 1px #fff
