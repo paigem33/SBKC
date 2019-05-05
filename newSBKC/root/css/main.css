@@ -81,7 +81,7 @@ a.btn {
   color: #eae1db;
   text-align: center;
   padding: 0.5em 0.5em;
-  margin: 0.5em 0.1em;
+  margin: 1em 0.1em;
   display: inline-block;
   min-width: 126px;
   max-height: 116px; }
@@ -93,9 +93,40 @@ a.btn {
 .btnDiv {
   text-align: center; }
 
+#home .mainImg {
+  margin-bottom: 20px; }
 #home .sec1 img {
   margin: 20px auto; }
+#home aside ul {
+  list-style-type: square;
+  margin: 2% 10%;
+  font-size: 20px; }
+#home aside li {
+  padding-bottom: 15px; }
 
+@media screen and (min-width: 700px) {
+  .sec1 {
+    display: flex;
+    border-bottom: solid 2px #153c71;
+    margin-bottom: 10px; }
+    .sec1 .twoCols {
+      flex: 1;
+      padding: 0 10px; }
+
+  .sec2 {
+    display: flex; }
+    .sec2 .threeCols {
+      flex: 1;
+      padding: 0 10px; }
+
+  .sec3 {
+    display: flex; }
+    .sec3 .twoCols {
+      flex: 1;
+      padding: 0 10px; }
+    .sec3 aside {
+      flex: 1;
+      padding: 0 10px; } }
 footer {
   min-height: 120px;
   padding: 2.5em;
@@ -161,21 +192,33 @@ nav {
     text-decoration: none;
     font: 1.25em/normal "Arimo", sans-serif;
     color: #3795cb; }
+    nav a:hover {
+      background-color: #153c71;
+      color: #fff; }
     nav a:active {
-      background-color: #3795cb;
+      background-color: #153c71;
       color: #fff; }
 
 #sub1, #sub2 {
   padding-left: 20px;
   display: none; }
 
-.linkFake {
+.disabled {
   padding: 5px;
   display: block;
   text-decoration: none;
   font: 1.25em/normal "Arimo", sans-serif;
   color: #3795cb; }
-  .linkFake a {
+  .disabled a {
+    font-size: 20px; }
+
+.active {
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  font: 1.25em/normal "Arimo", sans-serif;
+  color: #3795cb; }
+  .active a {
     font-size: 20px; }
 
 form {
@@ -185,6 +228,46 @@ form {
     margin-bottom: 1em;
     padding-top: 1.5em;
     background-color: #ededed; }
+  form legend {
+    font-style: italic;
+    color: #399;
+    margin-left: 10px; }
+  form li {
+    margin-bottom: 0.5em; }
+    form li label {
+      display: block;
+      padding-bottom: 0.2em; }
+    form li input {
+      width: 100%;
+      margin-bottom: 0.5em;
+      line-height: 2;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      height: 3em;
+      padding-left: 0.5em; }
+  form ul {
+    padding: 5px; }
+  form select {
+    height: 3em;
+    border-radius: 4px;
+    border: 1px solid #ccc; }
+  form .submitBtn {
+    cursor: pointer;
+    font: 16px/1.4 "Roboto", sans-serif;
+    text-decoration: none;
+    border: 1px solid #cb6a09;
+    background-color: #cb6a09;
+    color: #eae1db;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    margin: 1em 0.1em;
+    display: inline-block;
+    min-width: 126px;
+    max-height: 116px; }
+    form .submitBtn:hover {
+      background-color: teal;
+      border: solid 1px teal;
+      color: #fff; }
 
 @media screen and (min-width: 700px) {
   .fa-chevron-down {
@@ -195,10 +278,9 @@ form {
 
   nav {
     display: block; }
-
-  ul {
-    display: flex;
-    justify-content: space-around; }
+    nav ul {
+      display: flex;
+      justify-content: space-around; }
 
   #sub1, #sub2 {
     position: absolute;
