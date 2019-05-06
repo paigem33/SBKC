@@ -45,14 +45,14 @@ h2 {
   font: 2em/normal "Arimo", sans-serif;
   background-color: #3795cb;
   color: #fff;
-  padding: 0.25em 0.5em;
+  padding: 0.5em 0.5em;
   letter-spacing: 1.2px;
   text-align: center; }
 
 h3 {
   font: 1.5em/normal "Arimo", sans-serif;
   color: #3795cb;
-  padding: 0.25em 0.5em;
+  padding: 0.5em 0.5em;
   text-align: center; }
 
 p {
@@ -146,6 +146,22 @@ a.btn {
   text-align: center;
   padding: 10px; }
 
+#breeder p {
+  margin: 5px 20px 20px; }
+#breeder .sec2 p {
+  margin-top: 20px; }
+#breeder .sec2 img {
+  padding-top: 20px; }
+#breeder .sec2 article div {
+  background-color: #ededed;
+  margin: 10px; }
+#breeder .sec2 article ul {
+  list-style-type: disc;
+  margin: 10px 20px 0 50px;
+  padding-bottom: 10px; }
+#breeder .sec2 article li {
+  padding: 3px; }
+
 @media screen and (min-width: 700px) {
   #home .sec1 {
     display: flex;
@@ -194,8 +210,11 @@ a.btn {
     padding-top: 10px;
     display: flex;
     justify-content: space-around; }
-  #trainer .sec3 article p {
-    padding: 0 50px; }
+  #trainer .sec3 article {
+    display: flex; }
+    #trainer .sec3 article p {
+      width: 50%;
+      padding: 0 10px; }
   #trainer .sec4 {
     border-bottom: solid 2px #153c71;
     padding-bottom: 10px;
@@ -206,7 +225,20 @@ a.btn {
   #trainer .sec5 {
     display: flex; }
     #trainer .sec5 .twoCols {
-      flex: 1; } }
+      flex: 1; }
+
+  #breeder .welcome p {
+    padding: 0 50px; }
+  #breeder .sec1 {
+    display: flex; }
+    #breeder .sec1 .twoCols {
+      padding: 0 10px; }
+  #breeder .sec2 {
+    display: flex; }
+    #breeder .sec2 .twoCols {
+      flex: 1; }
+      #breeder .sec2 .twoCols div {
+        margin-top: 0; } }
 @media screen and (min-width: 1000px) {
   #showEvents .card h2 {
     top: 70px; }
