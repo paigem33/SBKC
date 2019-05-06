@@ -12,25 +12,72 @@
             font-size: 20px
         li
             padding-bottom: 15px
+//shows and events
+#showEvents
+    .card
+        display: block
+        overflow: hidden
+        position: relative
+        h2
+            width: 100%
+            position: absolute
+            overflow: hidden
+            top: 150px
+            left: 0
+            text-align: center
+            background: rgba(255,255,255,.9)
+            a
+                color: #df6e6e
+        img
+            display: block
+            position: relative 
+    .calender
+        iframe
+            max-width: 80%
+            max-height: 600px
+            margin: 0 10%
 @media screen and (min-width: 700px)
-    .sec1
-        display: flex
-        border-bottom: solid 2px #153c71
-        margin-bottom: 10px
-        .twoCols
-            flex: 1
-            padding: 0 10px
-    .sec2
-        display: flex
-        .threeCols
-            flex: 1
-            padding: 0 10px
-    .sec3
-        display: flex
-        .twoCols
-            flex: 1
-            padding: 0 10px
-        aside
-            flex: 1
-            padding: 0 10px
+    #home
+        .sec1
+            display: flex
+            border-bottom: solid 2px #153c71
+            margin-bottom: 10px
+            .twoCols
+                flex: 1
+                padding: 0 10px
+        .sec2
+            display: flex
+            .threeCols
+                flex: 1
+                padding: 0 10px
+        .sec3
+            display: flex
+            .twoCols
+                flex: 1
+                padding: 0 10px
+            aside
+                flex: 1
+                padding: 0 10px
+    #showEvents
+        article 
+            p
+                padding: 0 50px
+        .sec1
+            display: flex
+            .card
+                flex: 1
+                padding: 0 10px
+        .card
+            h2
+                font-size: 1.25em
+                top: 30px
+@media screen and (min-width: 1000px)
+    #showEvents
+        .card
+            h2
+                top: 70px
+            .mask
+                &:hover
+                    opacity: .5
+                
         

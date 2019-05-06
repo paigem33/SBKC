@@ -68,11 +68,16 @@ img {
 ul {
   list-style-type: none; }
 
+a {
+  text-decoration: none; }
+
 .regLink:link {
-  color: #02787a; }
+  color: #02787a;
+  text-decoration: underline; }
 
 .regLink:visited {
-  color: #02787a; }
+  color: #02787a;
+  text-decoration: underline; }
 
 a.btn {
   text-decoration: none;
@@ -104,29 +109,65 @@ a.btn {
 #home aside li {
   padding-bottom: 15px; }
 
+#showEvents .card {
+  display: block;
+  overflow: hidden;
+  position: relative; }
+  #showEvents .card h2 {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 150px;
+    left: 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); }
+    #showEvents .card h2 a {
+      color: #df6e6e; }
+  #showEvents .card img {
+    display: block;
+    position: relative; }
+#showEvents .calender iframe {
+  max-width: 80%;
+  max-height: 600px;
+  margin: 0 10%; }
+
 @media screen and (min-width: 700px) {
-  .sec1 {
+  #home .sec1 {
     display: flex;
     border-bottom: solid 2px #153c71;
     margin-bottom: 10px; }
-    .sec1 .twoCols {
+    #home .sec1 .twoCols {
+      flex: 1;
+      padding: 0 10px; }
+  #home .sec2 {
+    display: flex; }
+    #home .sec2 .threeCols {
+      flex: 1;
+      padding: 0 10px; }
+  #home .sec3 {
+    display: flex; }
+    #home .sec3 .twoCols {
+      flex: 1;
+      padding: 0 10px; }
+    #home .sec3 aside {
       flex: 1;
       padding: 0 10px; }
 
-  .sec2 {
+  #showEvents article p {
+    padding: 0 50px; }
+  #showEvents .sec1 {
     display: flex; }
-    .sec2 .threeCols {
+    #showEvents .sec1 .card {
       flex: 1;
       padding: 0 10px; }
-
-  .sec3 {
-    display: flex; }
-    .sec3 .twoCols {
-      flex: 1;
-      padding: 0 10px; }
-    .sec3 aside {
-      flex: 1;
-      padding: 0 10px; } }
+  #showEvents .card h2 {
+    font-size: 1.25em;
+    top: 30px; } }
+@media screen and (min-width: 1000px) {
+  #showEvents .card h2 {
+    top: 70px; }
+  #showEvents .card .mask:hover {
+    opacity: 0.5; } }
 footer {
   min-height: 120px;
   padding: 2.5em;
