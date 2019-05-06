@@ -228,6 +228,18 @@ a.btn {
     width: 100%;
     position: absolute; }
 
+#join .formBtn {
+  display: flex; }
+  #join .formBtn li {
+    flex: 1;
+    padding: 10px; }
+#join .firstMiddle {
+  display: flex; }
+  #join .firstMiddle li {
+    flex: 1; }
+    #join .firstMiddle li:nth-of-type(1) {
+      padding-right: 10px; }
+
 @media screen and (min-width: 700px) {
   #home .sec1 {
     display: flex;
@@ -348,7 +360,14 @@ a.btn {
     display: flex; }
     #contact .sec1 .twoCols {
       flex: 1;
-      padding: 0 10px; } }
+      padding: 0 10px; }
+
+  #join .join1 {
+    text-align: center;
+    padding: 0 50px; }
+  #join .join2 {
+    max-width: 750px;
+    margin: auto; } }
 @media screen and (min-width: 1000px) {
   #showEvents .card h2 {
     top: 70px; }
@@ -504,7 +523,9 @@ form {
     height: 5em;
     padding-left: 0.5em;
     display: block;
-    padding-bottom: 0.2em; }
+    padding-bottom: 0.2em;
+    margin-top: 20px;
+    font: 1em/normal "Lato", sans-serif; }
 
 @media screen and (min-width: 700px) {
   .fa-chevron-down {

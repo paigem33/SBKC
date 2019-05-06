@@ -143,6 +143,18 @@
             height: 100%
             width: 100%
             position: absolute
+#join
+    .formBtn
+        display: flex
+        li
+            flex: 1
+            padding: 10px
+    .firstMiddle
+        display: flex
+        li
+            flex: 1
+            &:nth-of-type(1)
+                padding-right: 10px
 @media screen and (min-width: 700px)
     #home
         .sec1
@@ -272,6 +284,13 @@
             .twoCols
                 flex: 1
                 padding: 0 10px
+    #join
+        .join1
+            text-align: center
+            padding: 0 50px
+        .join2
+            max-width: 750px
+            margin: auto
 @media screen and (min-width: 1000px)
     #showEvents
         .card
