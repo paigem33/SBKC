@@ -188,6 +188,16 @@ a.btn {
   padding: 10px;
   margin-top: 10px; }
 
+#about .sec1 img {
+  padding-bottom: 20px; }
+#about .sec3 .threeCols {
+  margin: 10px;
+  background-color: #ededed;
+  text-align: center;
+  padding: 10px; }
+#about .aboutBtn {
+  text-align: center; }
+
 @media screen and (min-width: 700px) {
   #home .sec1 {
     display: flex;
@@ -264,7 +274,38 @@ a.btn {
     #breeder .sec2 .twoCols {
       flex: 1; }
       #breeder .sec2 .twoCols div {
-        margin-top: 0; } }
+        margin-top: 0; }
+
+  #about .sec1 {
+    display: flex;
+    align-items: center;
+    padding-left: 15px; }
+    #about .sec1 .threeCols {
+      flex: 1; }
+  #about .sec2 {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px #153c71; }
+    #about .sec2 .twoCols {
+      flex: 1;
+      padding: 0 10px; }
+  #about .sec3 h3 {
+    text-align: left; }
+  #about .sec3 .threeCols {
+    display: flex;
+    align-items: center; }
+  #about .sec4 .threeCols {
+    display: flex;
+    margin-right: 15px; }
+    #about .sec4 .threeCols div {
+      flex: 1;
+      text-align: center; }
+  #about .sec5 {
+    display: flex;
+    align-items: center; }
+    #about .sec5 .twoCols {
+      flex: 1;
+      padding: 10px; } }
 @media screen and (min-width: 1000px) {
   #showEvents .card h2 {
     top: 70px; }

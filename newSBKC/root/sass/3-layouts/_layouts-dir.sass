@@ -102,6 +102,18 @@
         background-color: #ededed
         padding: 10px
         margin-top: 10px
+#about
+    .sec1
+        img
+            padding-bottom: 20px
+    .sec3
+        .threeCols
+            margin: 10px
+            background-color: #ededed
+            text-align: center
+            padding: 10px
+    .aboutBtn
+        text-align: center
 @media screen and (min-width: 700px)
     #home
         .sec1
@@ -184,6 +196,40 @@
                 flex: 1
                 div
                     margin-top: 0
+    #about
+        .sec1
+            display: flex
+            align-items: center
+            padding-left: 15px
+            .threeCols
+                flex: 1
+        .sec2
+            display: flex
+            align-items: center
+            border-bottom: solid 2px #153c71
+            .twoCols
+                flex: 1
+                padding: 0 10px
+        .sec3
+            h3
+                text-align: left
+            .threeCols
+                display: flex
+                align-items: center
+                
+        .sec4
+            .threeCols
+                display: flex
+                margin-right: 15px
+                div
+                    flex: 1
+                    text-align: center
+        .sec5
+            display: flex
+            align-items: center
+            .twoCols
+                flex: 1
+                padding: 10px
 @media screen and (min-width: 1000px)
     #showEvents
         .card
