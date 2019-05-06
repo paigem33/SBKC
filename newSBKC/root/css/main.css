@@ -98,6 +98,9 @@ a.btn {
 .btnDiv {
   text-align: center; }
 
+.centerBtn {
+  text-align: center; }
+
 #home .mainImg {
   margin-bottom: 20px; }
 #home .sec1 img {
@@ -195,8 +198,6 @@ a.btn {
   background-color: #ededed;
   text-align: center;
   padding: 10px; }
-#about .aboutBtn {
-  text-align: center; }
 
 #faq .faq1 {
   margin: 15px auto;
@@ -209,6 +210,23 @@ a.btn {
 #faq .beefup__body {
   background-color: #ededed;
   border-top: solid 2px #153c71; }
+
+#contact img {
+  width: 100%; }
+#contact .contact1 p {
+  text-align: center; }
+#contact .map {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border: 3px solid #CB6A09; }
+  #contact .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
 
 @media screen and (min-width: 700px) {
   #home .sec1 {
@@ -324,7 +342,13 @@ a.btn {
     align-items: center;
     padding: 20px; }
     #faq .sec1 .twoCols {
-      flex: 1; } }
+      flex: 1; }
+
+  #contact .sec1 {
+    display: flex; }
+    #contact .sec1 .twoCols {
+      flex: 1;
+      padding: 0 10px; } }
 @media screen and (min-width: 1000px) {
   #showEvents .card h2 {
     top: 70px; }
@@ -429,7 +453,7 @@ form {
   margin: 0.5em auto 1em; }
   form fieldset {
     margin-bottom: 1em;
-    padding-top: 1.5em;
+    padding: 10px;
     background-color: #ededed; }
   form legend {
     font-style: italic;
@@ -471,6 +495,16 @@ form {
       background-color: teal;
       border: solid 1px teal;
       color: #fff; }
+  form textarea {
+    width: 100%;
+    margin-bottom: 0.5em;
+    line-height: 2;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 5em;
+    padding-left: 0.5em;
+    display: block;
+    padding-bottom: 0.2em; }
 
 @media screen and (min-width: 700px) {
   .fa-chevron-down {
