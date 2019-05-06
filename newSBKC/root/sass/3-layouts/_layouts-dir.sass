@@ -73,6 +73,24 @@
                 padding-bottom: 10px
             li
                 padding: 3px
+#gallery
+    #tabs
+        ul
+            display: flex
+            justify-content: center
+    .galWrapper
+        display: flex
+        flex-wrap: wrap
+    #tabs-1, #tabs-2, #tabs-3
+        img
+            max-width: 300px
+        .galPicBox
+            background-color: #ededed
+            max-width: 350px
+            margin: 10px auto
+    img
+        &:hover
+            transform: scale(2, 2)
 @media screen and (min-width: 700px)
     #home
         .sec1

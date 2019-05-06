@@ -162,6 +162,21 @@ a.btn {
 #breeder .sec2 article li {
   padding: 3px; }
 
+#gallery #tabs ul {
+  display: flex;
+  justify-content: center; }
+#gallery .galWrapper {
+  display: flex;
+  flex-wrap: wrap; }
+#gallery #tabs-1 img, #gallery #tabs-2 img, #gallery #tabs-3 img {
+  max-width: 300px; }
+#gallery #tabs-1 .galPicBox, #gallery #tabs-2 .galPicBox, #gallery #tabs-3 .galPicBox {
+  background-color: #ededed;
+  max-width: 350px;
+  margin: 10px auto; }
+#gallery img:hover {
+  transform: scale(2, 2); }
+
 @media screen and (min-width: 700px) {
   #home .sec1 {
     display: flex;
