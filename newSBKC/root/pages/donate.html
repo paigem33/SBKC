@@ -26,13 +26,13 @@
      <div class="hamMenu">
          <i class="fas fa-bars hamMenu"></i>
      </div>
-      <a href="index.html"> <img src="../images/header.png" alt="header image"></a>
+      <a href="../index.html"> <img src="../images/header.png" alt="header image"></a>
          <nav>
          <ul>
              <li><a href="../index.html">Home</a><li>
              <li><a href="showEvents.html">Shows/Events</a></li>
              <li><a href="tr-hr.html">Trainers</a></li>
-             <li class="active">Breeders</li>
+             <li><a href="breeders.html">Breeders</a></li>
              <li class="disabled">Gallery<i class="fas fa-chevron-down"></i>
                  <ul id="sub1">
                      <li><a href="gallery.html">Photos</a></li>
@@ -54,12 +54,11 @@
         <h1>Donate to SBKC</h1>
        <article>
            <p>Donate to an SBKC Organization  SBKC Humane Fund The hallmark of the SBKC Humane Fund is responsible pet ownership, by supporting programs that preserve the human-animal bond and keep pets and owners together. </p>
-           <img src="../images/dddd.jpg" alt="dogs">
        </article>
           <section class="sec1">
            <article class="twoCols">
             <form action="#" method="post" id="donate">
-            <fieldset class="personalInfo">
+            <fieldset>
                 <legend>Personal Details</legend>
                 <ul>
                       <li>
@@ -80,40 +79,44 @@
                           <input type="tel" id="phone" name="phone" required placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                       </li>
                   </ul>
-                  <ul id="checkList">
-                      <li>
-                          <label for="uk"><input type="checkbox" id="uk" value="anonymous" name="check">I prefer this donation remain anonymous.</label>
-                      </li>
-                      <li>
-                          <label for="uk"><input type="checkbox" id="uk" value="anonymous" name="check">Yes. SBKC may contact me at the email address above.</label>
-                      </li>
-                  </ul>
+                  <div class="checkList">
+                      <div>
+                          <input type="checkbox" id="uk" value="anonymous" name="check">
+                          
+                          <label for="uk">I prefer this donation remain anonymous.</label>
+                      </div>
+                      <div>
+                          <input type="checkbox" id="uk" value="anonymous" name="check">
+                          
+                          <label for="uk">SBKC may contact me at the email address above.</label>
+                      </div>
+                  </div>
                   </fieldset>
                </form>
                 </article>
                  <article class="twoCols">
                  <form action="#" method="post" id="donate">
-                  <fieldset class="paymentDetails">
-                  <legend> Payment Details</legend>
-                     <ul id="radioList">
-                         <li>
+                  <fieldset>
+                  <legend>Payment Details</legend>
+                     <div class="radioList">
+                         <div>
                              <label for="low"><input type="radio"  id="low" name="amt" value="low">100$</label>
-                         </li>
-                         <li>
+                         </div>
+                         <div>
                              <label for="mid"><input type="radio"  id="mid" name="amt" value="mid">150$</label>
-                         </li>
-                         <li>
+                         </div>
+                         <div>
                              <label for="high"><input type="radio"  id="high" name="amt" value="high">250$</label>
-                         </li>
-                         <li>
+                         </div>
+                         <div>
                              <label for="vhigh"><input type="radio"  id="vhigh" name="amt" value="vhigh">500$</label>
-                         </li>
-                     </ul>
-                      <ul class="pay">
+                         </div>
+                     </div>
+                      <ul>
                           <li>
                               <input type="number" id="acNumber" name="acNumber" placeholder="Credit Card Number" required >
                           </li>
-                      
+                      <div class="monthYear">
                         <li>
                             <select name="month" id="month">
                                 <option value="months" selected>Month</option>
@@ -147,24 +150,29 @@
                                 <option value="2029">2029</option>
                                 <option value="2030">2030</option>
                             </select>
-                        </li> 
+                        </li>
+                        </div>
+                        <div class="formFlex">
                         <li>
                             <input type="number" id="cvc" name="cvc" placeholder="CVC" required >
                         </li>
                         <li>
                             <input type="text" id="zip" name="zip" placeholder="Zip Code" required >
                         </li>
+                        </div>
                     </ul>
                     <ul class="addCol">
                          <li>
                               <input type="text" id="address" name="address" placeholder=" Billing Address" required >
                           </li>
+                          <div class="formFlex">
                           <li>
                               <input type="text" id="city" name="city" placeholder=" City" >
                           </li>
                           <li>
                               <input type="text" id="state" name="state" placeholder=" State" required >
                           </li>
+                          </div>
 
                           <li>
                               <input type="submit" class="submitBtn" value="Submit your Donation">
