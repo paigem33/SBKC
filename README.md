@@ -1,7 +1,5 @@
 # Silver Bay Kennel Club website
 
-A group project from the Front End Web Development program at the San Diego Continuing Education Department. 
-
 ## Goals and Requirements 
 
 * Find an out of date website and bring it up to date
